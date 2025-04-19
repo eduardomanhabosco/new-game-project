@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://qrejc67ilnma"]
+
+[ext_resource type="PackedScene" uid="uid://3s1jkivetxow" path="res://enemys/enemy_tamplate.tscn" id="1_8prg4"]
+[ext_resource type="Texture2D" uid="uid://op1x237p8g3g" path="res://player/pizza.png" id="2_q0ot5"]
+
+[node name="EnemyPizza" instance=ExtResource("1_8prg4")]
+
+[node name="Textura" parent="." index="0"]
+position = Vector2(-2.00002, -10)
+scale = Vector2(0.325, 0.325)
+texture = ExtResource("2_q0ot5")

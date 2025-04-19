@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://7u7mguq736pa"]
+
+[ext_resource type="PackedScene" uid="uid://bra1x4w51w32i" path="res://player/terrain.tscn" id="1_4geu3"]
+[ext_resource type="PackedScene" uid="uid://bf714ilrmd2bk" path="res://player/player.tscn" id="2_t7jnc"]
+[ext_resource type="PackedScene" uid="uid://cixy4dt3tw4pj" path="res://enemys/enemy_burger.tscn" id="3_g8oqf"]
+[ext_resource type="PackedScene" uid="uid://cjcteoogw7gm6" path="res://enemys/enemy_pizza.tscn" id="4_uon1o"]
+
+[node name="GameLevel" type="Node2D"]
+
+[node name="TileMapLayer" parent="." instance=ExtResource("1_4geu3")]
+
+[node name="Player" parent="." instance=ExtResource("2_t7jnc")]
+position = Vector2(369, 219)
+scale = Vector2(0.135425, 0.135425)
+
+[node name="EnemyBurger" parent="." instance=ExtResource("3_g8oqf")]
+position = Vector2(283, 160)
+scale = Vector2(0.1, 0.1)
+_enemy_type = "chase"
+_move_speed = 70.0
+
+[node name="EnemyBurger2" parent="." instance=ExtResource("3_g8oqf")]
+position = Vector2(508, 151)
+scale = Vector2(0.1, 0.1)
+_enemy_type = "chase"
+_move_speed = 70.0
+
+[node name="EnemyBurger3" parent="." instance=ExtResource("4_uon1o")]
+position = Vector2(689, 195)
+scale = Vector2(0.278301, 0.278301)
+_enemy_type = "chase"
+_move_speed = 70.0
+
+[node name="EnemyBurger4" parent="." instance=ExtResource("4_uon1o")]
+position = Vector2(576, 107)
+scale = Vector2(0.278301, 0.278301)
+_enemy_type = "chase"
+_move_speed = 70.0

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://coxae0yillf4s"]
+
+[ext_resource type="PackedScene" uid="uid://3s1jkivetxow" path="res://enemys/enemy_tamplate.tscn" id="1_vxrm6"]
+[ext_resource type="Texture2D" uid="uid://c1u3pk3pixbe4" path="res://player/hamburher.png" id="2_utey2"]
+
+[node name="EnemyBurger" instance=ExtResource("1_vxrm6")]
+
+[node name="Textura" parent="." index="0"]
+position = Vector2(-3, 1.99998)
+scale = Vector2(0.46114, 0.46114)
+texture = ExtResource("2_utey2")

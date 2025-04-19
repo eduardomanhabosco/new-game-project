@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bf714ilrmd2bk"]
+
+[ext_resource type="Script" path="res://player/player.gd" id="1_p5tpp"]
+[ext_resource type="Texture2D" uid="uid://ysppqbnmnue" path="res://player/pepper.png" id="1_wfpu7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wuysg"]
+size = Vector2(245, 464)
+
+[node name="Player" type="CharacterBody2D"]
+scale = Vector2(0.736492, 0.736492)
+script = ExtResource("1_p5tpp")
+
+[node name="Texture" type="Sprite2D" parent="."]
+position = Vector2(46, -2)
+scale = Vector2(0.483333, 0.483333)
+texture = ExtResource("1_wfpu7")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(13.5, -20)
+shape = SubResource("RectangleShape2D_wuysg")
+
+[node name="Camera" type="Camera2D" parent="."]
+scale = Vector2(0.799812, 0.532741)
+zoom = Vector2(3, 3)
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+editor_draw_drag_margin = true

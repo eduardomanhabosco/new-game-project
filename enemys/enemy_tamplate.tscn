@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://3s1jkivetxow"]
+
+[ext_resource type="Script" path="res://enemys/enemy_tamplate.gd" id="1_w77su"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uv2li"]
+size = Vector2(88, 88)
+
+[node name="EnemyTamplate" type="CharacterBody2D"]
+script = ExtResource("1_w77su")
+
+[node name="Textura" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_uv2li")
